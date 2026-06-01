@@ -1,61 +1,71 @@
-/* CSS Variables for easy theme switching */
-:root {
-    --bg-color: #ffffff;
-    --text-color: #333333;
-    --card-bg: #f4f4f4;
-}
-
-/* Dark mode overrides */
-[data-theme="dark"] {
-    --bg-color: #1e1e1e;
-    --text-color: #ffffff;
-    --card-bg: #2d2d2d;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: var(--bg-color);
-    color: var(--text-color);
-    margin: 0;
-    padding: 0;
-    transition: background-color 0.3s, color 0.3s;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
 }
 
 header {
-    background-color: #000000;
-    color: #ffffff;
-    padding: 1rem 2rem;
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: center;
+
 }
 
-nav a {
-    color: #ffffff;
+header nav ul li {
+    margin: 0 15px;
+}
+header nav ul a {
+    color: #fff;
     text-decoration: none;
-    margin-right: 1.5rem;
-}
-
-button {
-    padding: 0.5rem 1rem;
-    background-color: #ffffff;
-    color: #000000;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
     font-weight: bold;
 }
 
-main {
-    padding: 2rem;
-    max-width: 800px;
-    margin: 0 auto;
+h1 {
+    margin-top: 10px;
 }
 
-.project-card {
-    background-color: var(--card-bg);
-    padding: 1.5rem;
-    border-radius: 8px;
+section {
+    padding: 2rem;
+    text-align: center;
+}
+
+.about, .projects {
+    background-color: #fff;
+    margin: 2rem 0;
+}
+
+.home {
+    background-color: #fff;
+    color: #fff;
+}
+
+.home p {
+    font-size: 1.5rem;
     margin-top: 1rem;
-    transition: background-color 0.3s;
+}
+
+.projects .project {
+    margin: 1rem 0;
+
+}
+
+footer {
+    background-color: #333;
+    color:#fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
 }
