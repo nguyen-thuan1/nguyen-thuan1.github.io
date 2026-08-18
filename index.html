@@ -1,58 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thuan Nguyen's Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thuan Nguyen — Portfolio</title>
+  <meta name="description" content="Computer science student portfolio — projects, experience, and contact." />
+
+  <!-- Font Usages -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
+
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-        <h1>Welcome to Thuan Nguyen's Portfolio</h1>
-    </header>
 
-    <section id="home" class="home">
-        <h2>hi. my name is thuan nguyen.</h2>
-        <p>and i am a software developer.</p>
-    </section>
+  <!-- ============ NAV ============ -->
+  <header class="site-header">
+    <div class="wrap nav">
+      <a href="#top" class="logo">TN.</a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
 
-    <section id="about" class="about">
-        <h2>About Me</h2>
-        <p>I am a passionate software developer with experience in creating web applications and solving complex problems.</p>
-    </section>
-
-    <section id="projects" class="projects">
-        <h2>Projects</h2>
-        
-        <div class="project">
-            <h3>Project 1: Personal Portfolio Website</h3>
-            <p>A responsive portfolio website built with HTML, CSS, and JavaScript to showcase my skills and projects.</p>
+  <!-- ============ HERO / ABOUT ============ -->
+  <section id="top" class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <!-- <p class="eyebrow">// about me</p> -->
+        <h1>Hi, I'm <span class="accent">Thuan Nguyen</span>.</h1>
+        <p class="hero-sub">
+          Computer science student building useful, well-crafted software —
+          from AI-assisted tools to sports data projects.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">View projects</a>
+          <a href="#contact" class="btn btn-ghost">Get in touch</a>
         </div>
+      </div>
+      <div class="hero-mark" aria-hidden="true">
+        <!-- signature highlighter-stroke motif, with animation transition onto the screen -->
+        <svg viewBox="0 0 320 320" class="mark-svg">
+          <circle cx="160" cy="160" r="150" fill="none" stroke="var(--ink-100)" stroke-width="1.5" stroke-dasharray="4 6"/>
+          <text x="160" y="175" text-anchor="middle" class="mark-text">&lt;/&gt;</text>
+        </svg>
+      </div>
+    </div>
+  </section>
 
-        <div class="project">
-            <h3>Project 2: Task Management App</h3>
-            <p>A task management application developed using React and Node.js to help users organize their tasks efficiently.</p>
-        </div>
+  <!-- ============ EXPERIENCE ============ -->
+  <section id="experience" class="section">
+    <div class="wrap">
+      <h2 class="section-title"><span class="highlight">Experience</span></h2>
 
-    </section>
+      <ul class="timeline" id="timelineList">
+        <!-- Populated from js/script.js: EXPERIENCE array -->
+      </ul>
+    </div>
+  </section>
 
-    <section id="contact" class="contact">
-        <h2>Contact Me</h2>
-        <p>You can reach me at <a href="mailto:thuan.nguyen@example.com">thuan.nguyen@example.com</a></p>
-    </section>
+  <!-- ============ PROJECTS ============ -->
+  <section id="projects" class="section section-alt">
+    <div class="wrap">
+      <h2 class="section-title"><span class="highlight">Projects</span></h2>
+      <p class="section-hint">Click a project to expand its description and links.</p>
 
-    <footer>
-        <p>&copy; 2026 Thuan Nguyen. All rights reserved.</p>
-    </footer>
-    
-    <script src="scripts.js"></script>
+      <div class="project-grid" id="projectGrid">
+        <!-- Populated from js/script.js: PROJECTS array -->    
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section id="contact" class="section">
+    <div class="wrap contact-wrap">
+      <h2 class="section-title"><span class="highlight">Contact</span></h2>
+      <p class="section-hint">Have a project or role in mind? Send a message below.</p>
+
+      <form class="contact-form" id="contactForm" novalidate>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com" required />
+
+        <label for="body">Message</label>
+        <textarea id="body" name="body" rows="8" placeholder="What's on your mind?" required></textarea>
+
+        <button type="submit" class="btn btn-primary send-btn">Send</button>
+        <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>© <span id="year"></span> 2026 Thuan Nguyen. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
 </body>
 </html>
