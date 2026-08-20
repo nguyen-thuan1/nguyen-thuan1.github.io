@@ -6,22 +6,22 @@
 
    const EXPERIENCE = [
     {
-      date: "2024 — 2025",
+      date: "August 2025 - October 2025",
       role: "Research Undergraduate Assistant",
-      org: "Your University",
-      desc: "Short description of the research, tools used, and your contribution."
+      org: "University of Oklahoma",
+      //desc: "Short description of the research, tools used, and your contribution."
     },
     {
-      date: "2024",
-      role: "SDE Intern",
+      date: "October 2025 - December 2025",
+      role: "Software Development Intern",
       org: "Calvient",
-      desc: "Short description of what you built or shipped during the internship."
+      //desc: "Short description of what you built or shipped during the internship."
     },
     {
-      date: "2025",
-      role: "Computer Science Tutor",
-      org: "Your University",
-      desc: "Tutored students in intro CS / data structures / whatever applies."
+      date: "May 2026 - August 2026",
+      role: "Software Engineer Intern - Computer Scientist",
+      org: "Tinker AFB",
+      //desc: "Tutored students in intro CS / data structures / whatever applies."
     }
   ];
   
@@ -39,11 +39,11 @@
       github: "https://github.com/your-username/nba-team-info"
     },
     {
-      title: "Tinker HEB Project",
-      tag: "Prototype",
+      title: "Career Elevation GPS",
+      tag: "Hackathon Project",
       desc: "Describe the concept, what problem it solves, and current status.",
       github: "https://github.com/your-username/tinker-heb"
-    }
+    } 
   ];
   
   /* =========================================================

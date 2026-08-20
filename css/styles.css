@@ -167,11 +167,9 @@
      HERO
      ========================================================= */
   .hero {
-    background-color: red;
     padding: 5.5rem 0 4.5rem;
   }
   .hero-grid {
-    background-color: blue;
     display: grid;
     grid-template-columns: 1.3fr 0.7fr;
     gap: 3rem;
@@ -203,7 +201,7 @@
   
   .hero-actions { display: flex; gap: 1rem; flex-wrap: wrap; }
   
-  .hero-mark { background-color: green; display: flex; justify-content: center; }
+  .hero-mark { display: flex; justify-content: center; }
   .mark-svg { width: 100%; max-width: 260px; }
   .mark-text {
     font-family: var(--font-mono);
