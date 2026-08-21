@@ -9,19 +9,19 @@
       date: "August 2025 - October 2025",
       role: "Research Undergraduate Assistant",
       org: "University of Oklahoma",
-      //desc: "Short description of the research, tools used, and your contribution."
+      
     },
     {
       date: "October 2025 - December 2025",
       role: "Software Development Intern",
-      org: "Calvient",
-      //desc: "Short description of what you built or shipped during the internship."
+      org: "Calvient Technologies",
+      
     },
     {
       date: "May 2026 - August 2026",
       role: "Software Engineer Intern - Computer Scientist",
       org: "Tinker AFB",
-      //desc: "Tutored students in intro CS / data structures / whatever applies."
+     
     }
   ];
   
@@ -62,7 +62,6 @@
         <span class="timeline-date">${item.date}</span>
         <h3 class="timeline-role">${item.role}</h3>
         <p class="timeline-org">${item.org}</p>
-        <p class="timeline-desc">${item.desc}</p>
       </li>
     `).join("");
   }
