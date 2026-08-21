@@ -35,7 +35,7 @@
     {
       title: "TimeOut - Screen Time Manager",
       tag: "Hackathon 2025 Project",
-      desc: "a browser extension enables users to manage screen time by providing a break timer and activity tracker to monitor internet usages.",
+      desc: "A browser extension enables users to manage screen time by providing a break timer and activity tracker to monitor internet usages.",
       github: "https://github.com/Jakob238/TimeOut---Hacklahoma-25"
     },
     {
