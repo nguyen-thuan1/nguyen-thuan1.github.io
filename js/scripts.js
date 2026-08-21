@@ -5,23 +5,23 @@
    ========================================================= */
 
    const EXPERIENCE = [
+     {
+       date: "May 2026 - August 2026",
+       role: "Software Engineer Intern - Computer Scientist",
+       org: "Tinker Air Force Base",
+      
+     },
+     {
+       date: "October 2025 - December 2025",
+       role: "Software Development Intern",
+       org: "Calvient Technologies",
+       
+     },
     {
       date: "August 2025 - October 2025",
       role: "Research Undergraduate Assistant",
-      org: "University of Oklahoma",
+      org: "University of Oklahoma - SenseBase",
       
-    },
-    {
-      date: "October 2025 - December 2025",
-      role: "Software Development Intern",
-      org: "Calvient Technologies",
-      
-    },
-    {
-      date: "May 2026 - August 2026",
-      role: "Software Engineer Intern - Computer Scientist",
-      org: "Tinker AFB",
-     
     }
   ];
   
