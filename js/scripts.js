@@ -27,23 +27,29 @@
   
   const PROJECTS = [
     {
-      title: "AI Assistant Project",
-      tag: "Python · LLM",
-      desc: "Click-to-expand project card, as sketched: a short write-up of what the assistant does, the stack, and a link to the repo.",
-      github: "https://github.com/your-username/ai-assistant-project"
+      title: "Career Elevation GPS",
+      tag: "Hackathon 2026 Project - Personal Project",
+      desc: "A hackathon project where students and professionals identify skill gaps and \"climb\" toward their dream internships via a Resume Matcher and Skill Gap Engine.",
+      github: "https://github.com/nguyen-thuan1/hack2026-project"
+    },
+    {
+      title: "TimeOut - Screen Time Manager",
+      tag: "Hackathon 2025 Project",
+      desc: "a browser extension enables users to manage screen time by providing a break timer and activity tracker to monitor internet usages.",
+      github: "https://github.com/Jakob238/TimeOut---Hacklahoma-25"
+    },
+    {
+      title: "RandTRO",
+      tag: "Hackathon 2024 Project",
+      desc: "A simple automated futuristic image generator that switches images throughout.",
+      github: "https://github.com/nguyen-thuan1/RandTRO"
     },
     {
       title: "NBA Team Info Project",
-      tag: "JavaScript · API",
-      desc: "Pulls live team/player data from a sports API and displays it in a clean dashboard.",
-      github: "https://github.com/your-username/nba-team-info"
-    },
-    {
-      title: "Career Elevation GPS",
-      tag: "Hackathon Project",
-      desc: "Describe the concept, what problem it solves, and current status.",
-      github: "https://github.com/your-username/tinker-heb"
-    } 
+      tag: "Personal Project",
+      desc: "A simple app where users can select an NBA team to view their team information based on the selected conference and location.",
+      github: "https://github.com/nguyen-thuan1/NBA-Team-Info-Project"
+    }
   ];
   
   /* =========================================================
@@ -90,7 +96,15 @@
     grid.querySelectorAll(".project-card").forEach(card => {
       const toggle = () => {
         const isOpen = card.getAttribute("aria-expanded") === "true";
-        card.setAttribute("aria-expanded", String(!isOpen));
+        
+        // ensure that the cards are all closed before the user selects to open the project card.
+        grid.querySelectorAll(".project-card").forEach(c => {
+          c.setAttribute("aria-expanded", "false");
+        });
+        
+        if(!isOpen) {
+          card.setAttribute("aria-expanded", "true");
+        }
       };
   
       card.addEventListener("click", toggle);
