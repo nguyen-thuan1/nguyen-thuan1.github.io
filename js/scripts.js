@@ -164,11 +164,3 @@
     initContactForm();
     document.getElementById("year").textContent = new Date().getFullYear();
   });
-
-// Resume Download Function 
-document.getElementById('resume-btn').addEventListener('click', () => {
-  const link = document.create('a');
-  link.href= 'assets/docs/resume.pdf';
-  link.download = 'Thuan Nguyen Resume.pdf';
-  link.click();
-});
